@@ -1,50 +1,48 @@
-# React + TypeScript + Vite
+# Portfolio Management
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern frontend project built with **React**, **TypeScript**, and **Vite**—perfect for managing investment portfolios or tracking assets with a fast and type-safe development experience.
 
-Currently, two official plugins are available:
+##  Tech Stack
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- **React** — in-browser UI rendering.
+- **TypeScript** — strong typing and enhanced tooling.
+- **Vite** — blazing-fast development and build pipeline with HMR.
+- **ESLint** — maintains code quality and consistency.
+- (Optional) **ts-eslint** — extend to type-aware linting using configurations like `recommendedTypeChecked`.
 
-## Expanding the ESLint configuration
+##  Prerequisites
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+Ensure you have the following installed:
 
-- Configure the top-level `parserOptions` property like this:
+- Node.js (≥14.x recommended)
+- `pnpm`, or npm/yarn if preferred
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+##  Getting Started with pnpm
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+1. **Clone the repo**
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
+  ```bash
+  git clone https://github.com/tdhanu74/portfolio-management.git
+  cd portfolio-management
+  ```
 
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
+2. **Install Dependencies**
+
+  ```bash
+  pnpm install
+  ```
+3. **Run the app in development**
+
+  ```bash
+  pnpm dev
+  ```
+4. **Build for Production**
+
+  ```bash
+  pnpm build
+  ```
+5. **Preview the Production Build**
+
+  ```bash
+  pnpm preview
+  ```
