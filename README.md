@@ -1,6 +1,6 @@
 # Portfolio Management
 
-A modern frontend project built with **React**, **TypeScript**, and **Vite**—perfect for managing investment portfolios or tracking assets with a fast and type-safe development experience.
+A modern frontend project built with **React**, **TypeScript**, and **Vite**—perfect for managing investment portfolios or tracking assets with a fast and type-safe development experience. Data for the Equity and Drawdown is provided in the code itself for visualization
 
 ##  Tech Stack
 
